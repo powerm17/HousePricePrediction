@@ -17,9 +17,13 @@ def real_estate_price_calculator():
             print("Please enter 'y' or 'n'.")
     
     if prices:
+        total_sum = sum(prices)
+        max_price = max(prices)
+        min_price = min(prices)
         # Calc Average
         avg_price = sum(prices) / len(prices)
-        print(f"\nThe average house price in the {neighborhood} neighborhood is {avg_price:.2f}")
+        print(f"\nYou have entered {len(prices)} values, sum is {total_sum}, max is {max_price}, min is {min_price}")
+        print(f"The average house price in the {neighborhood} neighborhood is {avg_price:.2f}")
     else:
         print(f"\nNo prices entered for the {neighborhood} neighborhood.")
     
