@@ -1,7 +1,28 @@
-#The number of houses in the neighborhoods is unknown 
-list1 = []
+def real_estate_price_calculator():
+    print("Welcome to my real estate average price calculator!")
+    
+    # Ask user neighborhood name
+    neighborhood = input("Enter the neighborhood name: ")
+    
+    # The number of houses in the neighborhoods is unknown 
+    prices = []
+    while True:
+        add_house_price = input("Would you like to add the price of one more house? (y/n): ")
+        if add_house_price.lower() == 'y':
+            price = float(input("Enter house price: "))
+            prices.append(price)
+        elif add_house_price.lower() == 'n':
+            break
+        else:
+            print("Please enter 'y' or 'n'.")
+    
+    if prices:
+        # Calc Average
+        avg_price = sum(prices) / len(prices)
+        print(f"\nThe average house price in the {neighborhood} neighborhood is {avg_price:.2f}")
+    else:
+        print(f"\nNo prices entered for the {neighborhood} neighborhood.")
+    
+    print("Thanks for using the App!")
 
-list1 = ['physics', 'chemistry', 1997, 2000]
-list2 = [1, 2, 3, 4, 5, 6, 7 ]
-print ("list1[0]: ", list1[0])
-print ("list2[1:7]: ", list2[1:7])
+real_estate_price_calculator()
