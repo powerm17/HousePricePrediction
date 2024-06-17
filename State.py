@@ -13,13 +13,18 @@ states_info = {
     "Florida": {
         "Capital": "Tallahassee",
         "Area": "65,758 sq mi",
-        "Population": "21.48 million",
+        "Population": "22.24 million",
     },
     "New York": {
-        "Capital": "Albany",
+        "Capital": "New York City",
         "Area": "54,555 sq mi",
-        "Population": "19.45 million",
-    }
+        "Population": "19.68 million",
+    },
+    "New Jersey": {
+        "Capital": "Trenton",
+        "Area": "7,354 sq mi",
+        "Population": "9.262 million",
+}
 }
 
 # get and display state info
